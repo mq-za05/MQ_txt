@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin version="php">
+<id>MQ_txt</id>
+<name>文章导出为TXT文档</name>
+<url>http://www.za05.com/</url>
+<note>文章导出为TXT文档</note>
+<description></description>
+<path>list.php</path>
+<include>include.php</include>
+<level>1</level>
+<author>
+  <name>墨染柒</name>
+  <email>null@null.com</email>
+  <url>http://www.za05.com/</url>
+</author>
+<source>
+  <name></name>
+  <email></email>
+  <url></url>
+</source>
+<adapted>172900</adapted>
+<version>1.1</version>
+<pubdate>2023-06-28</pubdate>
+<modified>2023-07-02</modified>
+<price>0</price>
+<phpver>5.5</phpver>
+<advanced>
+  <dependency></dependency>
+  <rewritefunctions></rewritefunctions>
+  <existsfunctions></existsfunctions>
+  <conflict></conflict>
+</advanced>
+<sidebars>
+  <sidebar1></sidebar1>
+  <sidebar2></sidebar2>
+  <sidebar3></sidebar3>
+  <sidebar4></sidebar4>
+  <sidebar5></sidebar5>
+  <sidebar6></sidebar6>
+  <sidebar7></sidebar7>
+  <sidebar8></sidebar8>
+  <sidebar9></sidebar9>
+</sidebars>
+</plugin>
