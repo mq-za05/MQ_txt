@@ -26,7 +26,7 @@ function MQ_txt_Download($filename,$content){
 
 function InstallPlugin_MQ_txt() {
 	global $zbp;
-	if(!$zbp->Config('MQ_txt')->HasKey('Version')){                 
+	if (!$zbp->HasConfig('MQ_txt')) {               
         $zbp->Config('MQ_txt')->Version = '1.0';  
 		$zbp->Config('MQ_txt')->managecount = '50';
 		$zbp->SaveConfig('MQ_txt');   
