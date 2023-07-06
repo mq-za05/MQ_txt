@@ -9,10 +9,11 @@ if (!$zbp->CheckPlugin('MQ_txt')) {$zbp->ShowError(48);die();}
 if(GetVars('act','GET') == 'download' ){
 	global $zbp;
 	CheckIsRefererValid();
-	if (isset($_GET['id']) && (int) $_GET['id'] != 0) {
-		$article = $zbp->GetPostByID((int) GetVars('id', 'GET'));
+	$id = (int)GetVars('id', 'GET');
+	if ($id != 0) {
+		$article = $zbp->GetPostByID($id);
 		if (!empty($article->ID)) { 
-			MQ_txt_Download(FormatString($article->Title, '[filename]'),$article->Content);
+			MQ_txt_Download(FormatString($article->Title, '[filename]'), $article->Content);
 		}
 	}
 }
