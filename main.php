@@ -14,7 +14,8 @@ if (count($_POST) > 0) {
 	CheckIsRefererValid();
 	$zbp->Config('MQ_txt')->managecount = $_POST['managecount'];
 	$zbp->SaveConfig('MQ_txt');
-    $zbp->ShowHint('good');
+    $zbp->SetHint('good'); 
+	Redirect('./main.php');
 }
 
 ?>
